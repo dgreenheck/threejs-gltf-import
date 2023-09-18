@@ -63,7 +63,7 @@ loader.load('scene.gltf', (gltf) => {
 
   document.getElementById('progress').style.display = 'none';
 }, ( xhr ) => {
-  document.getElementById('progress').innerHTML = `LOADING ${100 * xhr.loaded / xhr.total}/100`;
+  document.getElementById('progress').innerHTML = `LOADING ${xhr.loaded / xhr.total * 100}/100`;
 },);
 
 window.addEventListener('resize', () => {
