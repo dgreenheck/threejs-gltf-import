@@ -60,6 +60,16 @@ loader.load('scene.gltf', (gltf) => {
 
   mesh.position.set(0, 1.05, -1);
   scene.add(mesh);
+
+  document.getElementById('progress').style.display = 'none';
+}, ( xhr ) => {
+  document.getElementById('progress').innerHTML = `LOADING ${100 * xhr.loaded / xhr.total}/100`;
+},);
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
 function animate() {

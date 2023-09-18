@@ -27,3 +27,19 @@ h1 {
   font-family: 'Code';
   margin: 0px;
 }
+
+#progress-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progress {
+  font-family: 'Code';
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
