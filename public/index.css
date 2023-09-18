@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Code';
+  src: local('Code Light'), url(fonts/code_light.otf) format('otf');
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+#heading {
+  position: fixed;
+  width: 100%;
+  padding: 64px;
+}
+
+.border {
+  background: linear-gradient(90deg, gray, 90%, black);
+  height: 2px;
+  width: 1100px;
+  margin-top: 4px;
+}
+
+h1 {
+  color: rgb(215, 215, 215);
+  font-size: 7em;
+  font-family: 'Code';
+  margin: 0px;
+}
