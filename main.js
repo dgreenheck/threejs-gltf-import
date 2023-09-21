@@ -41,7 +41,7 @@ groundMesh.castShadow = false;
 groundMesh.receiveShadow = true;
 scene.add(groundMesh);
 
-const spotLight = new THREE.SpotLight(0xffffff,  3, 100, 0.2, 0.5);
+const spotLight = new THREE.SpotLight(0xffffff,  3, 100, 0.22, 1);
 spotLight.position.set(0, 25, 0);
 spotLight.castShadow = true;
 spotLight.shadow.bias = -0.0001;
@@ -61,9 +61,9 @@ loader.load('scene.gltf', (gltf) => {
   mesh.position.set(0, 1.05, -1);
   scene.add(mesh);
 
-  document.getElementById('progress').style.display = 'none';
+  document.getElementById('progress-container').style.display = 'none';
 }, ( xhr ) => {
-  document.getElementById('progress').innerHTML = `LOADING ${xhr.loaded / xhr.total * 100}/100`;
+  document.getElementById('progress').innerHTML = `LOADING ${Math.max(xhr.loaded / xhr.total, 1) * 100}/100`;
 },);
 
 window.addEventListener('resize', () => {
