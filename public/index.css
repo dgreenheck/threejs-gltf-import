@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Code';
-  src: local('Code Light'), url(fonts/code_light.otf) format('otf');
+  src: local('Code Light'), url(/public/fonts/code_light.otf), format('otf');
 }
 
 body {
@@ -17,13 +17,13 @@ body {
 .border {
   background: linear-gradient(90deg, gray, 90%, black);
   height: 2px;
-  width: 1100px;
+  width: 80vw;
   margin-top: 4px;
 }
 
 h1 {
   color: rgb(215, 215, 215);
-  font-size: 7em;
+  font-size: 3em;
   font-family: 'Code';
   margin: 0px;
 }
