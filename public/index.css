@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Code';
-  src: local('Code Light'), url(/public/fonts/code_light.otf), format('otf');
+  src: local('Code Light'), url(fonts/code_light.otf), format('otf');
 }
 
 body {
