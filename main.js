@@ -64,9 +64,7 @@ loader.load('scene.gltf', (gltf) => {
 
   document.getElementById('progress-container').style.display = 'none';
 }, (xhr) => {
-  const message = `LOADING ${Math.max(xhr.loaded / xhr.total, 1) * 100}/100`;
-  console.log(message);
-  document.getElementById('progress').innerHTML = message;
+  console.log(`loading ${xhr.loaded / xhr.total * 100}%`);
 }, (error) => {
   console.error(error);
 });

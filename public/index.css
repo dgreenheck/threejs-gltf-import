@@ -1,17 +1,18 @@
 @font-face {
-  font-family: 'Code';
-  src: local('Code Light'), url(fonts/code_light.otf), format('otf');
+  font-family: 'SF Distant Galaxy';
+  src: local('SF Distant Galaxy'), url(fonts/SF\ Distant\ Galaxy.ttf), format('ttf');
 }
 
 body {
   background-color: black;
   margin: 0;
+  font-family: 'SF Distant Galaxy';
 }
 
 #heading {
   position: fixed;
   width: 100%;
-  padding: 64px;
+  padding: 32px;
 }
 
 .border {
@@ -23,9 +24,9 @@ body {
 
 h1 {
   color: rgb(215, 215, 215);
-  font-size: 3em;
-  font-family: 'Code';
+  font-size: 4em;
   margin: 0px;
+  font-weight: 100;
 }
 
 #progress-container {
@@ -38,8 +39,6 @@ h1 {
 }
 
 #progress {
-  font-family: 'Code';
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 3em;
   color: white;
 }
